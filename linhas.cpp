@@ -34,8 +34,8 @@ int merge_sort(vector<int> &v){
 	///u1 é o vetor da esquerda [0,v.size()/2[
 	///u2 é o vetor da direita [v.size()/2,v.size()-1]
 	
-	for(int i=0;i<v.size()/2;i++)u1.push_back(v[i]); //preenchendo o vetor auxiliar da esquerda
-	for(int i=v.size()/2;i<v.size();i++)u2.push_back(v[i]); //preenchendo o vetor auxiliar da direita
+	for(unsigned i=0;i<v.size()/2;i++)u1.push_back(v[i]); //preenchendo o vetor auxiliar da esquerda
+	for(unsigned i=v.size()/2;i<v.size();i++)u2.push_back(v[i]); //preenchendo o vetor auxiliar da direita
 
 	inv += merge_sort(u1); //recursão para ordenar o vetor auxiliar da esquerda e adicionar as inversões ao contador de inversões
 	inv += merge_sort(u2); //recursão para ordenar o vetor auxiliar da direita e adicionar as inversões ao contador de inversões
@@ -46,7 +46,7 @@ int merge_sort(vector<int> &v){
 
 	int _1=0,_2=0; ///variáveis auxiliares para gerenciar as posições de "inicio" dos vetores auxiliares durante o join
 
-	for(int i=0;i<v.size();i++){ //join
+	for(unsigned i=0;i<v.size();i++){ //join
 		//verificar se o menor valor está na direita ou na esquerda
 		if(u1[_1]<u2[_2]){ // se o menor valor está na esquerda simplesmente colocamos o valor no vetor original na posição i  e somamos (+1) na variável auxiliar
 			v[i] = u1[_1];
