@@ -1,5 +1,5 @@
 /**
-* @file linhas.cpp
+* @file 17-unindo_os_iguais.cpp
 * @brief resolução do problema "Unindo os iguais"
 * @author Lucas Gabriel T. Araújo
 * @date 10/07/2021

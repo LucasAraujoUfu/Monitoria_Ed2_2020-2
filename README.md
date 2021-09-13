@@ -2,4 +2,6 @@ Nesse repositório serão colocados os códigos fonte criados nos vídeos de cor
 
 Segue abaixo os links para os vídeos onde os códigos são construídos.
 
-<a href=''>17 - Unindo os iguais</a>
+<a href='https://youtu.be/H7dRaPIk060'>17 - Unindo os iguais</a>
+<a href='https://youtu.be/7hZWDPyf30U'>21 - Chaves Magicas</a>
+
